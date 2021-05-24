@@ -1,0 +1,55 @@
+Hook: 14432.25
+
+
+
+
+Time: 487.820118904
+DEBUG:SendFinder:Superset senders: [
+[u'com.tplinkra.network.common.URLBuilder', '<init>', ['java.lang.String'], 'void'], FP
+[u'com.tplinkra.network.transport.tcp.TCPClient', u'b', [], 'com.tplinkra.network.transport.tcp.TCPResponse'], TP
+[u'com.tplinkra.tpcommon.discovery.TPDeviceUDPBroadcastClient', u'broadcast', ['byte[]', 'int', 'java.lang.String'], 'void'], TP
+[u'com.tplinkra.tpcommon.discovery.TPDeviceUDPBroadcastClient', u'close', [], 'void'], FP
+[u'com.tplinkra.tpcommon.discovery.TPDeviceUDPBroadcastClient', u'getPeerIp', [], 'java.lang.String'], FP
+[u'com.tplinkra.tpcommon.discovery.TPDeviceUDPBroadcastClient', u'open', [], 'void']] FP
+2 TP, 4 FP
+
+
+senders: [[u'com.tplinkra.network.common.URLBuilder', '<init>', ['java.lang.String'], 'void'], FP
+[u'com.tplinkra.network.transport.tcp.TCPClient', u'b', [], 'com.tplinkra.network.transport.tcp.TCPResponse'], TP
+ [u'com.tplinkra.tpcommon.discovery.TPDeviceUDPBroadcastClient', u'broadcast', ['byte[]', 'int', 'java.lang.String'], 'void'], TP
+ [u'com.tplinkra.tpcommon.discovery.TPDeviceUDPBroadcastClient', u'close', [], 'void'], FP
+ [u'com.tplinkra.tpcommon.discovery.TPDeviceUDPBroadcastClient', u'getPeerIp', [], 'java.lang.String'], FP
+ [u'com.tplinkra.tpcommon.discovery.TPDeviceUDPBroadcastClient', u'open', [], 'void']]
+2 TP, 4FP
+
+
+sweet spot:
+Time (s): 1765.11323285
+Log in /tmp/sweet_spots_log.com.tplink.kasa_android
+[[u'com.tplinkra.tpcommon.discovery.TPDeviceUDPBroadcastClient', u'<init>', ['java.lang.String'], 'void'], TP
+[u'com.tplinkra.network.transport.tcp.TCPClient', u'<init>', ['java.lang.String', 'java.lang.String', 'int', 'byte[]', 'com.tplinkra.network.transport.SocketProvider'], 'void'], TP
+['com.tplinkra.network.transport.SocketProvider', 'getSocket', ['int'], 'java.lang.Object'],  FP
+2TP 1FP
+
+(u'h', u'com.tplinkra.network.transport.tcp.TCPClient'),
+ (u'rPacket', u'com.tplinkra.tpcommon.discovery.TPDeviceUDPBroadcastClient'),
+ (u'mLocalPort', u'com.tplinkra.tpcommon.discovery.TPDeviceUDPBroadcastClient'),
+ (u'b', u'com.tplinkra.network.transport.tcp.TCPClient'),
+ (u'c', u'com.tplinkra.network.transport.tcp.TCPClient'),
+ (u'g', u'com.tplinkra.network.transport.tcp.TCPClient'),
+ (u'd', u'com.tplinkra.network.transport.tcp.TCPClient'),
+ (u'e', u'com.tplinkra.network.transport.tcp.TCPClient'),
+ (u'isOpen', u'com.tplinkra.tpcommon.discovery.TPDeviceUDPBroadcastClient')]
+(u'f', u'com.tplinkra.network.transport.tcp.TCPClient'),
+(u'mDatagramSocket',  u'com.tplinkra.tpcommon.discovery.TPDeviceUDPBroadcastClient'),
+
+Fuzzing alarms (yes means that the sweet spot generated at least one alarm)
+[[u'com.tplinkra.tpcommon.discovery.TPDeviceUDPBroadcastClient', u'<init>', ['java.lang.String'], 'void'], no
+[u'com.tplinkra.network.transport.tcp.TCPClient', u'<init>', ['java.lang.String', 'java.lang.String', 'int', 'byte[]', 'com.tplinkra.network.transport.SocketProvider'], 'void'], yes
+['com.tplinkra.network.transport.SocketProvider', 'getSocket', ['int'], 'java.lang.Object'],  no
+[[u'com.tplinkra.network.common.URLBuilder', '<init>', ['java.lang.String'], 'void'], no
+[u'com.tplinkra.network.transport.tcp.TCPClient', u'b', [], 'com.tplinkra.network.transport.tcp.TCPResponse'], no
+ [u'com.tplinkra.tpcommon.discovery.TPDeviceUDPBroadcastClient', u'broadcast', ['byte[]', 'int', 'java.lang.String'], 'void'], no
+ [u'com.tplinkra.tpcommon.discovery.TPDeviceUDPBroadcastClient', u'close', [], 'void'], no
+ [u'com.tplinkra.tpcommon.discovery.TPDeviceUDPBroadcastClient', u'getPeerIp', [], 'java.lang.String'], no
+ [u'com.tplinkra.tpcommon.discovery.TPDeviceUDPBroadcastClient', u'open', [], 'void']] no

@@ -1,0 +1,41 @@
+Hook :Elapsed time (s): 1206.48100209
+
+Time: 1166.65270114
+
+
+DEBUG:SendFinder:Superset senders:
+[[u'com.google.android.gms.internal.zzaql', u'a', ['com.google.android.gms.internal.zzarq'], 'void'], FP
+[u'com.google.android.gms.internal.zzaqo', u'a', ['com.google.android.gms.internal.zzaqf', 'boolean'], 'long'], TP
+[u'com.google.android.gms.internal.zzarw', u'f', [], 'boolean'], FP
+[u'com.lifx.app.util.WifiScanner', u'a', ['android.content.Context'], 'void'], FP
+[u'com.lifx.app.util.WifiScanner', u'b', ['android.content.Context'], 'void'], FP
+[u'com.lifx.core.cloud.CloudCertificateTrustManager', u'loadKeyManagers', ['com.lifx.core.auth.CloudConfigurationStore'], 'javax.net.ssl.KeyManager[]'], FP
+[u'com.lifx.core.transport.rx.DnsResolver', u'resolve', ['java.lang.String'], 'java.net.InetAddress'], FP
+[u'com.lifx.core.transport.rx.ReactiveLight', '<init>', ['com.lifx.core.entity.EntityFacade', 'com.lifx.core.transport.ITransportManager', 'io.reactivex.flowables.GroupedFlowable', 'io.reactivex.Scheduler', 'com.lifx.core.cloud.CloudDeviceInfo'], 'void'], FP
+[u'com.lifx.core.transport.rx.TcpTransport', '<init>', ['java.lang.String', 'int', 'java.security.cert.X509Certificate[]', 'javax.net.ssl.KeyManager[]', 'com.lifx.core.auth.CloudConfigurationStore', 'int'], 'void']] FP
+1TP 8FP
+
+[[u'com.google.android.gms.internal.zzaqo', u'a', ['com.google.android.gms.internal.zzaqf', 'boolean'], 'long'], TP
+[u'com.google.android.gms.internal.zzaql', u'a', ['com.google.android.gms.internal.zzarq'], 'void'], FP
+[u'com.lifx.core.transport.rx.DnsResolver', u'resolve', ['java.lang.String'], 'java.net.InetAddress']] FP
+1 TP 2 FP
+
+sweet spots
+121.895817041
+[]
+[[],
+[(u'b', u'com.google.android.gms.internal.zzaqo'),
+(u'a', u'com.google.android.gms.internal.zzapz'),
+(u'c', u'com.google.android.gms.internal.zzaql')],
+ [],
+ [(u'b', u'com.google.android.gms.internal.zzaqo'),
+ (u'a', u'com.google.android.gms.internal.zzapz'),
+ (u'c', u'com.google.android.gms.internal.zzaql')],
+ [], [(u'b', u'com.google.android.gms.internal.zzaqo'),
+ (u'a', u'com.google.android.gms.internal.zzapz'),
+ (u'c', u'com.google.android.gms.internal.zzaql')]]
+
+Fuzzing alarms (yes means that the sweet spot generated at least one alarm)
+[[u'com.google.android.gms.internal.zzaqo', u'a', ['com.google.android.gms.internal.zzaqf', 'boolean'], 'long'],
+[u'com.google.android.gms.internal.zzaql', u'a', ['com.google.android.gms.internal.zzarq'], 'void'],
+[u'com.lifx.core.transport.rx.DnsResolver', u'resolve', ['java.lang.String'], 'java.net.InetAddress']]

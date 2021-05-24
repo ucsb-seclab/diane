@@ -1,0 +1,8 @@
+['com.fos.sdk.FosSdkJNI', 'SetInfraLedConfig', "['int', 'int', 'int']", 'int']
+['com.fos.sdk.FosSdkJNI', 'SetSubVideoStreamType', "['int', 'int', 'int']", 'int']
+['com.fos.sdk.FosSdkJNI', 'SetVideoStreamParam', "['int', 'com.fos.sdk.VideoStreamParam', 'int']", 'int']
+['com.fos.sdk.FosSdkJNI', 'SetOSDSetting', "['int', 'com.fos.sdk.OSDSetting', 'int']", 'int']
+['com.fos.sdk.FosSdkJNI', 'SetMotionDetectConfig', "['int', 'int', 'com.fos.sdk.MotionDetectConfig']", 'int']
+['com.fos.sdk.FosSdkJNI', 'AecSetHandle', "['int']", 'int']
+['com.fos.sdk.FosSdkJNI', 'CloseTalk', "['int', 'int']", 'int']
+['com.fos.sdk.FosSdkJNI', 'SetMainVideoStreamType', "['int', 'int', 'int']", 'int']

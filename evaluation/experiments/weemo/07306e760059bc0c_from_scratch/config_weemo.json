@@ -1,0 +1,20 @@
+{
+    "apk_path": "/media/badnack/Documents/Code/zeppolina/experiments/weemo/com.belkin.wemodroid.apk",
+    "device_ip": "10.250.250.147",
+    "android_ip": "10.250.250.100",
+    "pass_ap": "admin",
+    "device_id": "07306e760059bc0c",
+    "proc_name": "com.belkin.wemoandroid",
+    "ip_hot_spot": "192.168.62.55",
+    "bad_functions":  [["java.net.DatagramSocket", "receive"], ["com.belkin.wemo.cache.cloud.CloudRequestManager", "CloudRequestListener"]],
+    "sweet_spots": [],
+    "send_functions": [],
+    "skip_classes": [],
+    "android_sdk_platforms": "/home/badnack/Android/Sdk/platforms",
+    "leaf_pickle": "/media/badnack/Documents/Code/zeppolina/experiments/weemo/leaves_com.belkin.wemoandroid",
+    "frida_hooker_pickle": "/tmp/frida_results.pickle_com.belkin.wemoandroid",
+    "reran_record_path": "/media/badnack/Documents/Code/zeppolina/experiments/weemo/07306e760059bc0c_from_scratch/reran.log",
+    "skip_methods" : [],
+    "pcap_path": "/media/badnack/Documents/Code/zeppolina/experiments/weemo/captures/",
+    "results_path": "/tmp"
+}

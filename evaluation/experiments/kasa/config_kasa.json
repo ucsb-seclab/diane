@@ -1,0 +1,18 @@
+{
+    "apk_path": "/media/badnack/Documents/Code/zeppolina/experiments/kasa/Kasa for Mobile_v2.1.3.779_apkpure.com.apk",
+    "device_ip": "10.250.250.131",
+    "android_ip": "10.250.250.138",
+    "pass_ap": "admin",
+    "device_id": "00da0c1695ebbfb1",
+    "proc_name": "com.tplink.kasa_android",
+    "ip_hot_spot": "192.168.62.55",
+    "bad_functions":  [["java.net.DatagramSocket", "receive"]],
+    "skip_classes": [],
+    "send_functions": [["com.tplinkra.network.transport.tcp.TCPClient", "b", [], "com.tplinkra.network.transport.tcp.TCPResponse"]],
+    "android_sdk_platforms": "/home/badnack/Android/Sdk/platforms",
+    "leaf_pickle": "/media/badnack/Documents/Code/zeppolina/experiments/kasa/leaves_com.tplink.kasa_android",
+    "reran_record_path": "/media/badnack/Documents/Code/zeppolina/experiments/kasa/reran_kasa.log",
+    "skip_methods" : [],
+    "frida_hooker_pickle": "",
+    "results_path": "/tmp"
+}

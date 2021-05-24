@@ -1,0 +1,22 @@
+{
+    "apk_path": "/media/badnack/Documents/Code/zeppolina/evaluation/experiments/insteon/com.insteon.insteon3_2017-09-19.apk",
+    "device_ip": "10.250.250.126",
+    "android_ip": "10.250.250.137",
+    "pass_ap": "admin",
+    "device_id": "00da0c1695ebbfb1",
+    "proc_name": "com.insteon.insteon3",
+    "ip_hot_spot": "192.168.62.55",
+    "skip_classes": [],
+    "send_functions": [["com.insteon.comm.HttpUtil", "httpRequest", ["java.lang.String", "java.lang.String", "java.lang.String", "int", "int"], "java.lang.String"]],
+    "bad_functions": [["java.net.HttpURLConnection", "getResponseCode"]],
+    "leaf_pickle": "/media/badnack/Documents/Code/zeppolina/evaluation/experiments/insteon/leaves_com.insteon.insteon3",
+    "android_sdk_platforms": "/home/badnack/Android/Sdk/platforms",
+    "reran_record_path": "/media/badnack/Documents/Code/zeppolina/evaluation/experiments/insteon/rans_insteon.log",
+    "skip_methods" : [["com.fos.sdk.FosSdkJNI", "GetVideoData", ["int", "com.fos.sdk.FrameData", "int"], "int"]],
+    "pcap_path": "/media/badnack/Documents/Code/zeppolina/evaluation/experiments/insteon/captures/",
+    "frida_hooker_pickle": "",
+    "sweet_spots": [""],
+    "results_path": "/tmp",
+    "fmt_data_keys": ["intervalDay", "guideMode", "devName", "recordLevel", "recordType", "isEnablePreRecord", "cloudServer", "rs485Baud", "snapQuality", "key4Len", "schedule4", "schedule5", "streamType", "code", "schedule0", "schedule1", "defaultKey", "szRefreshToken", "startMin1", "startMin0", "area6", "startMin2", "speed", "area1", "area2", "isEnablePCAudioAlarm", "isNewFormat", "ftpAddr", "ratio", "pushServer", "schedule3", "key1Len", "constrast", "area0", "day", "isEnableSetFilename", "isMovAlarmEnable", "smtpServer", "szGuid", "alarmRecordSecs", "psk", "saturation", "szPortal", "lowerLimit", "format", "outdoorFlag", "ipList7", "ftpPort", "auth", "fileName", "chnnl", "isUseWifi", "mon", "newUsrName", "password", "localAlarmRecordSecs", "minute", "richMediaType", "name", "level", "brightness", "keyFormat", "schedule6", "server", "endMin0", "endMin1", "endMin2", "isDHCP", "privilege", "mode", "talkFlag", "area8", "endTime", "p2pServer", "area9", "schedule2", "sensitivity", "isFlip", "isVBR", "iProperty", "area4", "preRecordSecs", "sec", "audioFlag", "device_type", "year", "dstStartWhichOne", "port", "startNo", "spaceFullMode", "index", "area7", "usrName", "ssid", "szStreamId", "dateFormat", "time4", "time5", "dst", "time7", "time0", "time1", "time2", "time3", "state", "isNeedAuth", "endHour2", "endHour1", "endHour0","area3", "key3Len", "zoomFlag", "szPublishToken", "szDevId", "webPort", "oldPwd", "server_addr", "dstEndHour", "dstEndWhichWeek", "offset", "path", "freq", "linkage", "tls", "sender", "dstEndWhichOne", "richMediaEnable", "isAnonymous", "ntpServer", "ipList1", "ipList6", "dstStartHour", "frameRate", "ipList5", "mac", "update_type", "timeZone", "shareDirAddr", "alarmLevel", "isDst", "newPwd", "timeSource", "hostName", "sharpness", "netModeChange", "rs485StopBit", "netType", "snapInterval", "OEMFlag", "key2Len", "languge", "user_id", "mask", "music5", "serialNo", "dns2", "dns1", "chn", "mapName", "isPirAlarmEnable", "groupId", "httpsPort", "startHour0", "dstEndMonth", "startHour2", "rs485DataBit", "type", "ipList2", "usr", "hue", "enable", "dispPos", "dstStartMonth", "alarmLinkage", "fptUserName", "volume", "channel_id", "pwd", "productType", "cycle", "startHour1", "wpsFlag", "rs485Flag", "count", "hour","onvifPort", "bitRate", "topLimit", "value", "url", "rs485Protocol", "remoteIp", "customed", "ipList3", "onvifFlag", "minutes", "ipList0", "wifiType", "rs485Check", "uid", "saveLocation", "usrPwd", "key3", "key2", "key1", "pid", "key4", "ipList4", "szAccessToken", "rs485Addr", "isMainStream", "mediaPort", "FosTag", "authMode", "encryptType", "isMirror", "codeLen", "reciever", "isEnable", "cmd_oper", "filePath", "isEnableAudio", "point0", "point1", "point2", "point3", "point4", "point5", "point6", "point7", "gate", "ftpPassword", "callbackJson", "musicNum", "isEnableLocalAlarmRecord", "recordPath", "ddnsServer", "rtspPort", "triggerInterval", "ioAlarmFlag", "p2pFlag", "area5", "user", "startTime", "timeFormat", "ptFlag", "GOP", "isEnableTempAndHumid", "userName", "music4", "music7", "music6", "music1", "music0", "music3", "music2", "isEnableDevName", "music9", "music8", "rule", "sensorType", "switch", "sdFlag", "isEnableTimeStamp", "time", "model", "passWord", "resolution", "time6", "dstStartWhichWeek"],
+    "fw_dir": "/media/badnack/Documents/Code/zeppolina/experiments/insteon/fw"
+}

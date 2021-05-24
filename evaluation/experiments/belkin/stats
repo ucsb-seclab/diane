@@ -1,0 +1,24 @@
+Time hook: 3483.27
+
+sender time: 2120.53591
+superset senders: DEBUG:SendFinder:Superset senders:
+[[u'com.android.volley.NetworkDispatcher', u'run', [], 'void'], TP
+[u'com.android.volley.toolbox.BasicNetwork', u'performRequest', ['com.android.volley.Request'], 'com.android.volley.NetworkResponse'], TP
+[u'com.android.volley.toolbox.HurlStack', u'openConnection', ['java.net.URL', 'com.android.volley.Request'], 'java.net.HttpURLConnection'], FP
+[u'com.android.volley.toolbox.HurlStack', u'performRequest', ['com.android.volley.Request', 'java.util.Map'], 'org.apache.http.HttpResponse'], TP
+[u'com.android.volley.toolbox.HurlStack', u'setConnectionParametersForRequest', ['java.net.HttpURLConnection', 'com.android.volley.Request'], 'void'], FP
+[u'com.android.volley.toolbox.Volley', u'newRequestQueue', ['android.content.Context', 'com.android.volley.toolbox.HttpStack'], 'com.android.volley.RequestQueue']] FP
+
+3 TP 3 FP
+
+senders; DEBUG:ApkFuzzer:Possible senders \
+[[u'com.android.volley.toolbox.HurlStack', u'performRequest', ['com.android.volley.Request', 'java.util.Map'], 'org.apache.http.HttpResponse']] TP
+1 TP
+
+sweet spots
+Time (s): 80.628715992
+[[], [(u'mUrlRewriter', u'com.android.volley.toolbox.HurlStack')]]
+0 ss
+
+Fuzzing alarms (yes means that the sweet spot generated at least one alarm)
+[[u'com.android.volley.toolbox.HurlStack', u'performRequest', ['com.android.volley.Request', 'java.util.Map'], 'org.apache.http.HttpResponse']] no

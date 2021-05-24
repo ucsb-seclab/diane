@@ -1,0 +1,35 @@
+Hooking
+time: 1237.97 seconds
+
+Time: 122.590224981
+DEBUG:SendFinder:Superset senders: [
+DEBUG:SendFinder:Superset senders: [
+[u'com.p2p.SEP2P_AppSDK', u'SEP2P_Connect', ['java.lang.String', 'java.lang.String', 'java.lang.String'], 'int'], TP
+[u'com.p2p.SEP2P_AppSDK', u'SEP2P_Disconnect', ['java.lang.String'], 'int'], TP
+[u'com.p2p.SEP2P_AppSDK', u'SEP2P_GetAVParameterSupported', ['java.lang.String', 'com.p2p.AV_PARAMETER'], 'int'], FP
+[u'com.p2p.SEP2P_AppSDK', u'SEP2P_SendMsg', ['java.lang.String', 'int', 'byte[]', 'int'], 'int']] TP
+
+senders:
+[u'com.p2p.SEP2P_AppSDK', u'SEP2P_SendMsg', ['java.lang.String', 'int', 'byte[]', 'int'], 'int'], TP
+
+Sweet spots:
+Time (s): 4367.59400582
+
+[u'com.example.samplesep2p_appsdk.CamObj', u'setFTPInfo', ['java.lang.String', 'java.lang.String', 'java.lang.String', 'java.lang.String', 'int', 'int', 'int'], 'int'] TP
+[u'com.example.samplesep2p_appsdk.CamObj', u'set_push_info', ['int'], 'int'] TP
+[u'com.example.samplesep2p_appsdk.CamObj', u'setUserInfo', ['java.lang.String', 'java.lang.String', 'java.lang.String', 'java.lang.String'], 'int'] TP
+[u'com.example.samplesep2p_appsdk.CamObj', u'setDateTime', ['int', 'int', 'int', 'java.lang.String', 'int'], 'int'] TP
+[u'com.example.samplesep2p_appsdk.CamObj', u'setDid', ['java.lang.String'], 'void'] FP
+[u'com.example.samplesep2p_appsdk.CamObj', u'setCurrentWifi', ['int', 'java.lang.String', 'int', 'int', 'int', 'int', 'int', 'java.lang.String', 'java.lang.String', 'java.lang.String', 'java.lang.String', 'int', 'int', 'int', 'int', 'java.lang.String', 'byte'], 'int'] TP
+[u'com.example.samplesep2p_appsdk.CamObj', u'setSDcardInfo', ['int', 'int', 'int', 'int'], 'int'] TP
+6 TP 1 FP
+
+Fuzzing alarms (yes means that the sweet spot generated at least one alarm)
+[u'com.example.samplesep2p_appsdk.CamObj', u'setFTPInfo', ['java.lang.String', 'java.lang.String', 'java.lang.String', 'java.lang.String', 'int', 'int', 'int'], 'int'] no
+[u'com.example.samplesep2p_appsdk.CamObj', u'set_push_info', ['int'], 'int'] no
+[u'com.example.samplesep2p_appsdk.CamObj', u'setUserInfo', ['java.lang.String', 'java.lang.String', 'java.lang.String', 'java.lang.String'], 'int'] no
+[u'com.example.samplesep2p_appsdk.CamObj', u'setDateTime', ['int', 'int', 'int', 'java.lang.String', 'int'], 'int'] no
+[u'com.example.samplesep2p_appsdk.CamObj', u'setDid', ['java.lang.String'], 'void'] no
+[u'com.example.samplesep2p_appsdk.CamObj', u'setCurrentWifi', ['int', 'java.lang.String', 'int', 'int', 'int', 'int', 'int', 'java.lang.String', 'java.lang.String', 'java.lang.String', 'java.lang.String', 'int', 'int', 'int', 'int', 'java.lang.String', 'byte'], 'int'] no
+[u'com.example.samplesep2p_appsdk.CamObj', u'setSDcardInfo', ['int', 'int', 'int', 'int'], 'int'] no
+[u'com.p2p.SEP2P_AppSDK', u'SEP2P_SendMsg', ['java.lang.String', 'int', 'byte[]', 'int'], 'int'], yes

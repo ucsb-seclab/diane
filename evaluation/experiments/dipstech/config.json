@@ -1,0 +1,20 @@
+{
+    "apk_path": "/media/badnack/Documents/Code/zeppolina/experiments/dipstech/DEPSTECH.apk",
+    "device_ip": "10.250.250.147",
+    "android_ip": "10.250.250.137",
+    "pass_ap": "admin",
+    "device_id": "FA6CL0300613",
+    "proc_name": "com.tony.molink.tonseecamview",
+    "ip_hot_spot": "192.168.62.55",
+    "bad_functions":  [["java.net.DatagramSocket", "receive"], ["com.belkin.wemo.cache.cloud.CloudRequestManager", "CloudRequestListener"]],
+    "sweet_spots": [],
+    "send_functions": [],
+    "skip_classes": [],
+    "android_sdk_platforms": "/home/badnack/Android/Sdk/platforms",
+    "leaf_pickle": "",
+    "frida_hooker_pickle": "",
+    "reran_record_path": "",
+    "skip_methods" : [],
+    "pcap_path": "",
+    "results_path": "/tmp"
+}

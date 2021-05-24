@@ -1,0 +1,20 @@
+{
+    "apk_path": "/media/badnack/Documents/Code/zeppolina/experiments/weemo/com.belkin.wemodroid.apk",
+    "device_ip": "10.250.250.147",
+    "android_ip": "10.250.250.137",
+    "pass_ap": "admin",
+    "device_id": "00da0c1695ebbfb1",
+    "proc_name": "com.belkin.wemoandroid",
+    "ip_hot_spot": "192.168.62.55",
+    "bad_functions":  [["java.net.DatagramSocket", "receive"], ["com.belkin.wemo.cache.cloud.CloudRequestManager", "CloudRequestListener"]],
+    "sweet_spots": [],
+    "send_functions": [["org.cybergarage.http.HTTPRequest", "post", ["java.lang.String", "int", "boolean", "int", "int"], "org.cybergarage.http.HTTPResponse"], ["com.android.volley.toolbox.HurlStack", "performRequest", ["com.android.volley.Request", "java.util.Map"], "org.apache.http.HttpResponse"], ["org.cybergarage.http.HTTP", "getHost", ["java.lang.String"], "java.lang.String"], ["org.cybergarage.upnp.ssdp.SSDPPacket", "getData", [], "byte[]"], ["org.cybergarage.http.HTTP", "getPort", ["java.lang.String"], "int"], ["org.cybergarage.net.HostInterface", "isIPv6Address", ["java.lang.String"], "boolean"]],
+    "skip_classes": [],
+    "android_sdk_platforms": "/home/badnack/Android/Sdk/platforms",
+    "leaf_pickle": "/media/badnack/Documents/Code/zeppolina/experiments/weemo/leaves_com.belkin.wemoandroid",
+    "frida_hooker_pickle": "/media/badnack/Documents/Code/zeppolina/experiments/weemo/frida_hooker.pickle",
+    "reran_record_path": "/media/badnack/Documents/Code/zeppolina/experiments/weemo/00da0c1695ebbfb1_from_scratch/reran.log",
+    "skip_methods" : [],
+    "pcap_path": "/media/badnack/Documents/Code/zeppolina/experiments/weemo/captures/",
+    "results_path": "/tmp"
+}

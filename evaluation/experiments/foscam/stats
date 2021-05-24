@@ -1,0 +1,29 @@
+Hooker:  3294.26032805 seconds
+
+sender:
+Time (s): 742.658247948
+superset: [
+[u'com.a.a.a.g', u'a', ['java.net.HttpURLConnection'], 'org.apache.http.HttpEntity'], FP
+[u'com.a.a.a.g', u'a', ['java.net.HttpURLConnection', 'com.a.a.n'], 'void'], FP
+[u'com.a.a.a.g', u'a', ['java.net.URL'], 'java.net.HttpURLConnection'], FP
+[u'com.a.a.a.g', u'a', ['java.net.URL', 'com.a.a.n'], 'java.net.HttpURLConnection'], FP
+[u'com.fos.sdk.FosSdkJNI', u'AecRunAlTalk', [], 'int'], NS
+[u'com.fos.sdk.FosSdkJNI', u'AecSendTalkData', [], 'int'], TP
+[u'com.fos.sdk.FosSdkJNI', u'AecSetHandle', ['int'], 'int'], FP
+[u'com.fos.sdk.FosSdkJNI', u'PtzCmd', ['int', 'int', 'int'], 'int'],  TP
+[u'com.fos.sdk.FosSdkJNI', u'SnapshotRawVideoData', ['int', 'byte[]', 'int', 'java.lang.String', 'int'], 'int']] FP
+2 TP, 7 FP, 1 NS
+
+DEBUG:ApkFuzzer:
+Possible senders [[u'com.fos.sdk.FosSdkJNI', u'PtzCmd', ['int', 'int', 'int'], 'int'],
+[u'com.fos.sdk.FosSdkJNI', u'AecSendTalkData', [], 'int'], TP
+2 TP  0 FP
+
+sweet spots:
+Time (s): 213.067
+[]
+
+Fuzzing alarms (yes means that the sweet spot generated at least one alarm)
+u'com.fos.sdk.FosSdkJNI', u'PtzCmd', ['int', 'int', 'int'], 'int'], yes
+[u'com.fos.sdk.FosSdkJNI', u'AecSendTalkData', [], 'int'] no
+
